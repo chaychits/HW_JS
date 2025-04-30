@@ -12,6 +12,7 @@ let n = 1;
             sum += n
         }
        n++
-    }
+    };
+    console.log(sum);
 
 

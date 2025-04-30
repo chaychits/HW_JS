@@ -3,7 +3,7 @@
 
 // your code
 let sum = 0;
-let  n = 0 ;
+let  n = 0;
 while (n < 20) {
     n ++;
     sum += n;
