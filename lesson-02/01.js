@@ -10,7 +10,7 @@ let verification = isVerifiedUser
 let permission = hasSpecialPermission
 let pass = hasTemporaryPass
 
-if((user === false || verification === true) && (permission === true && pass === false) ){
+if((user === false || verification === true) && (permission === true || pass === false) ){
     isAccess = true;
 }
 else{
