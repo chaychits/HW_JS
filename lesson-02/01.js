@@ -33,11 +33,10 @@ let pass = prompt("Do you have pass?");
 
 if((user === isAdmin || verification === isVerifiedUser) && permission === hasSpecialPermission && pass === hasTemporaryPass ){
     isAccess = true;
-    alert("ok")
 }
 else{
     isAccess = false;
-    alert("Доступ отклонен")}
+    }
 
 
 // your code
