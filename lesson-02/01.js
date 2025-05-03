@@ -19,19 +19,19 @@
 
 // тестовые данные (значения можно менять)
 
-const isAdmin = "Да"
-const isVerifiedUser = "Да"
-const hasSpecialPermission = "Да"
-const hasTemporaryPass = "Да"
+const isAdmin = false
+const isVerifiedUser = true
+const hasSpecialPermission = true
+const hasTemporaryPass = false
 
 let isAccess
 
-let user = prompt("What is your name?");
-let verification = prompt("Do you have verification?");
-let permission = prompt("Do you have permissions?");
-let pass = prompt("Do you have pass?");
+let user = isAdmin
+let verification = isVerifiedUser
+let permission = hasSpecialPermission
+let pass = hasTemporaryPass
 
-if((user === isAdmin || verification === isVerifiedUser) && permission === hasSpecialPermission && pass === hasTemporaryPass ){
+if((user === false || verification === true) && permission === true && pass === false ){
     isAccess = true;
 }
 else{
