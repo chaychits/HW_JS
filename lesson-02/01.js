@@ -6,11 +6,11 @@ const hasTemporaryPass = "Да"
 let isAccess
 
 let user = prompt("What is your name?");
-let verification = prompt("Do you have verification?");
+// let verification = prompt("Do you have verification?");
 let permission = prompt("Do you have permissions?");
-let pass = prompt("Do you have pass?");
+// let pass = prompt("Do you have pass?");
 
-if((user === isAdmin ) || ((verification === isVerifiedUser) && (permission === hasSpecialPermission || pass === hasTemporaryPass ))){
+if((user === isAdmin || user === isVerifiedUser) && (permission === hasSpecialPermission || permission === hasTemporaryPass )){
     isAccess = true;
 }
 else{
