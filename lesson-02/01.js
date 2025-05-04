@@ -1,16 +1,16 @@
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isAdmin = "Да"
+const isVerifiedUser = "Да"
+const hasSpecialPermission = "Да"
+const hasTemporaryPass = "Да"
 
 let isAccess
 
-let user = isAdmin
-let verification = isVerifiedUser
-let permission = hasSpecialPermission
-let pass = hasTemporaryPass
+let user = prompt("What is your name?");
+let verification = prompt("Do you have verification?");
+let permission = prompt("Do you have permissions?");
+let pass = prompt("Do you have pass?");
 
-if((user === false || verification === true) && (permission === true || pass === false) ){
+if((user === isAdmin || verification === isVerifiedUser) && (permission === hasSpecialPermission || pass === hasTemporaryPass )){
     isAccess = true;
 }
 else{
