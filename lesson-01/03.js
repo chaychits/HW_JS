@@ -7,12 +7,13 @@
 // your code
 let sum = 0;
 let n = 1;
-    while (n <= 20) {
-        if (n % 2 === 1) {
-            sum += n
-        }
-       n++
-    };
-    console.log(sum);
+while (n <= 20) {
+    if (n % 2 === 1) {
+        sum += n
+    }
+    n++
+}
+;
+console.log(sum);
 
 

@@ -3,9 +3,9 @@
 
 // your code
 let sum = 0;
-let  n = 0;
+let n = 0;
 while (n < 20) {
-    n ++;
+    n++;
     sum += n;
 }
 console.log(sum);
