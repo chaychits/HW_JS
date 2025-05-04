@@ -10,7 +10,7 @@ let user = prompt("What is your name?");
 let permission = prompt("Do you have permissions?");
 // let pass = prompt("Do you have pass?");
 
-if((user === isAdmin || user === isVerifiedUser) && (permission === hasSpecialPermission && permission === hasTemporaryPass )){
+if((user === isAdmin && permission === hasSpecialPermission) || (user === isVerifiedUser && permission === hasTemporaryPass )){
     isAccess = true;
 }
 else{
