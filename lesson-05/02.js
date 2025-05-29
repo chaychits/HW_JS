@@ -35,4 +35,13 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(gallery, name, painter) {
+  if (gallery.key === name || gallery.value != painter) {
+    gallery[name] = painter
+  } else if (gallery.key != name || gallery.value != painter) {
+    gallery.name = "painter"
+  }
+  return gallery
+}
+
+console.log(updateGallery(gallery, 'Starry Nighfft', 'Vincent van 1980 Gogh'))
