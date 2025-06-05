@@ -26,19 +26,20 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 const numbers = [1, 2, 3, 4, 5]
 
 const callback = (element, index) => {
-    if (element % 2 === 0) {
-        return [element]; // Возвращаем массив с null и элементом
+    if (element) {
+        return [element];
     }
-    // Возвращаем null, если условие не выполнено
 };
 
+
+
 const filter = (array, callback) => {
-    const result = []; // Создаем массив для хранения результатов
+    const result = [];
 
     for (let i = 0; i < array.length; i++) {
-        const res = callback(array[i], i); // Вызываем callback с элементом и индексом
+        const res = callback(array[i], i);
         if (res) {
-            result.push(...res);
+            result.push(array[i]);
         }
     }
     return result
