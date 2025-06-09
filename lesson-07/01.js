@@ -19,23 +19,17 @@ const WEB_TECH_IMAGES = [
 ]
 const prevBtn = document.getElementById("prev-button");
 const nextBtn = document.getElementById("next-button");
+const imgElement = document.getElementById("web-tech-image");
 let currentIndex = 0;
 
 function showImage(index) {
-  const imgItem = document.createElement("img");
-  imgItem.src = WEB_TECH_IMAGES[index];
-
-  const container = document.querySelector('#web-tech-image');
-  container.innerHTML = '';
-  container.appendChild(imgItem);
+  imgElement.src = WEB_TECH_IMAGES[index];
 }
-
 
 prevBtn.addEventListener("click", function () {
   currentIndex = (currentIndex - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
   showImage(currentIndex);
 });
-
 
 nextBtn.addEventListener("click", function () {
   currentIndex = (currentIndex + 1) % WEB_TECH_IMAGES.length;
