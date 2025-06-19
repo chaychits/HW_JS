@@ -10,5 +10,11 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+    const strArray = str.split('');
+    if (strArray.length <= maxLength) {
+        return str;
+    }else {
+        return str.substring(0, maxLength) + '...';
+    }
 }
+console.log(truncate('helкнтуктккуеlo', 5))
